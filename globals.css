@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes burn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-burn {
+  animation: burn 1s ease-out forwards;
+}
+
+:root {
+  --gradient-start: #991b1b;
+  --gradient-end: #7f1d1d;
+}
+
+.bg-theme-gradient {
+  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add a subtle text shadow to improve readability on the hero image */
+.drop-shadow-lg {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
