@@ -26,10 +26,11 @@ export default function AntiValentines() {
               className="rounded-full"
             />
             <span className="font-bold text-xl">Fuck Valentines Alliance</span>
-          </Link>
-          <Button variant="outline" className="border-red-600 text-red-600 hover:bg-red-600/10">
-            Join the Rebellion
-          </Button>
+            <a href="https://discord.com/invite/ceZMNJDF" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" className="border-red-600 text-red-600 hover:bg-red-600/10">
+              Join the Rebellion
+            </Button>
+          </a>
         </nav>
       </header>
 
